@@ -1,0 +1,23 @@
+{
+  "name": "auto-cp-notifier",
+  "version": "1.0.0",
+  "description": "cp contest notifier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanmay-sinha/auto-cp-notifier.git"
+  },
+  "author": "tanmay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanmay-sinha/auto-cp-notifier/issues"
+  },
+  "homepage": "https://github.com/tanmay-sinha/auto-cp-notifier#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.2"
+  }
+}
