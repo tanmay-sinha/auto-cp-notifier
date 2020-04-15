@@ -1,8 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-router.post('/', (req, res) => {
+router.get('/register', (req, res) => {
+    res.render("register");
+});
 
+router.post('/register', (req, res) => {
     const email = req.body.email;
     if (req.body.sites[0].length == 1 &&
         req.body.sites[1].length == 1 &&
