@@ -11,7 +11,6 @@ function sortByTime(dates) {
 }
 
 function scrapesite() {
-    // setTimeout(() => {
     request(URL, (error, res, html) => {
         if (!error && res.statusCode == 200) {
             let $ = cheerio.load(html);
@@ -48,10 +47,11 @@ function scrapesite() {
                 if (err) throw err;
                 else console.log('contests updated successfully');
             });
+            // setTimeout(() => {
+            //     scrapesite();
+            // }, 4000);
         }
     });
-    //     scrapesite();
-    // }, 2000);
 }
 
 scrapesite();

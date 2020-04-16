@@ -20,7 +20,10 @@ app.use('/', require('./routes/home'));
 app.use('/', require('./routes/register'));
 
 // Scrapping site
-const scrapper = require('./models/scrapper');
+require('./models/scrapper');
+
+// Sending notification
+
 
 // start server
 app.listen(PORT, (err) => {
