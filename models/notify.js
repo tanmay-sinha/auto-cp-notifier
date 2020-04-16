@@ -10,8 +10,9 @@ function fetchData() {
     console.log(timeTill);
 
     delete contest[0];
+
     fs.writeFile('contests.json', contest, (err) => {
-        if(err) throw err;
+        if (err) throw err;
         else console.log('Updated contests successfully.');
     });
 
