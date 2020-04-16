@@ -34,7 +34,7 @@ function scrapesite() {
                     else if (site == 'codechef.com') id = 3;
                     dates.push(
                         {
-                            id : id,
+                            id: id,
                             site: item1,
                             date: contestDate
                         }
@@ -42,10 +42,10 @@ function scrapesite() {
                 }
             });
             sortByTime(dates);
-            dates = JSON.stringify(Object.assign({}, dates),null,4);
-            
-            fs.writeFile('contests.json',dates,(err) => {
-                if(err) throw err;
+            dates = JSON.stringify(Object.assign({}, dates), null, 4);
+
+            fs.writeFile('contests.json', dates, (err) => {
+                if (err) throw err;
                 else console.log('contests updated successfully');
             });
         }
