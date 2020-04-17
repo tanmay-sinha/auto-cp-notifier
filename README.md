@@ -1,2 +1,2 @@
 # auto-cp-notifier
-peoject to automatically notify regarding programming competition
+project to automatically notify regarding programming competition
