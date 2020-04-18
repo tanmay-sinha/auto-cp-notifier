@@ -23,10 +23,10 @@ app.use('/', require('./routes/home'));
 app.use('/', require('./routes/register'));
 
 // Scrapping site
-// require('./models/scrapper');
+require('./models/scrapper');
 
 // Sending notification
-// require('./models/notify');
+require('./models/notify');
 
 // start server
 app.listen(PORT, (err) => {
